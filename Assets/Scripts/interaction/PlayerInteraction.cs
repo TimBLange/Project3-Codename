@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -7,24 +7,51 @@ public class PlayerInteraction : MonoBehaviour
     public Camera playerCamera;
     public TextMeshProUGUI uiText;
 
-    private bool textVisible = false;            // merkt  ob text an ist
-    private string currentText = "";             // speichert den text des Objekts
+    private ObjectInteract currentObj;
+    private bool textVisible = false;
 
     void Update()
     {
+        // E → Interact OR continue sequence
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (textVisible)
+            if (textVisible && currentObj != null && currentObj.hasSequence)
             {
-                
-                uiText.text = "";
-                textVisible = false;
+                uiText.text = currentObj.GetNextSequenceText();
+                return;
             }
-            else
+
+            ToggleInteract();
+        }
+
+        // A / B for Yes/No choices
+        if (currentObj != null && currentObj.hasChoices)
+        {
+            if (Input.GetKeyDown(KeyCode.A))
             {
-                
-                TryInteract();
+                uiText.text = currentObj.yesText;
+                EndInteraction();
             }
+
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                uiText.text = currentObj.noText;
+                EndInteraction();
+            }
+        }
+    }
+
+    void ToggleInteract()
+    {
+        if (textVisible)
+        {
+            uiText.text = "";
+            textVisible = false;
+            currentObj = null;
+        }
+        else
+        {
+            TryInteract();
         }
     }
 
@@ -39,10 +66,27 @@ public class PlayerInteraction : MonoBehaviour
 
             if (obj != null)
             {
-                currentText = obj.GetText();  // Text holen
-                uiText.text = currentText;    // anzeigen
-                textVisible = true;           // merken dass Text aktiv ist
+                currentObj = obj;
+
+                // Reset multistep sequences
+                obj.ResetSequence();
+
+                // Show first prompt
+                uiText.text = obj.GetText();
+                textVisible = true;
+
+                // If choices → append instructions
+                if (obj.hasChoices)
+                {
+                    uiText.text += "\n(A = Yes / B = No)";
+                }
             }
         }
+    }
+
+    void EndInteraction()
+    {
+        textVisible = true;   // stays visible until next E
+        currentObj = null;
     }
 }

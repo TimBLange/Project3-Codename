@@ -2,10 +2,35 @@ using UnityEngine;
 
 public class ObjectInteract : MonoBehaviour
 {
-    public string interactionText = "Standard Text";
+    [Header("Basic Interaction Text")]
+    public string interactionText = "";        // z.B. Prompt
 
-    public string GetText()   
+    [Header("Optional: Yes/No Choices")]
+    public bool hasChoices = false;
+    public string yesText = "";
+    public string noText = "";
+
+    [Header("Optional: Multi-Step Sequence")]
+    [TextArea] public string[] sequenceTexts;
+
+    private int sequenceIndex = 0;
+    public bool hasSequence => sequenceTexts != null && sequenceTexts.Length > 0;
+
+    public string GetText()
     {
-        return interactionText;
+        if (!hasSequence) return interactionText;
+        return sequenceTexts[sequenceIndex];
+    }
+
+    public string GetNextSequenceText()
+    {
+        if (!hasSequence) return "";
+        sequenceIndex = Mathf.Min(sequenceIndex + 1, sequenceTexts.Length - 1);
+        return sequenceTexts[sequenceIndex];
+    }
+
+    public void ResetSequence()
+    {
+        sequenceIndex = 0;
     }
 }

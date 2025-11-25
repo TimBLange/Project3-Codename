@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
 public class Playermovement : MonoBehaviour
@@ -18,6 +19,7 @@ public class Playermovement : MonoBehaviour
 
     void Update()
     {
+        //Hardcoded
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 

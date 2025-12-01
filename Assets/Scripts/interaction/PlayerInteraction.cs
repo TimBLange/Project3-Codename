@@ -12,8 +12,8 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        // E → Interact OR continue sequence
-        if (Input.GetKeyDown(KeyCode.E))
+        // E → Interactionn 
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (textVisible && currentObj != null && currentObj.hasSequence)
             {
@@ -24,16 +24,16 @@ public class PlayerInteraction : MonoBehaviour
             ToggleInteract();
         }
 
-        // A / B for Yes/No choices
+        // Q  E for Yes no choices
         if (currentObj != null && currentObj.hasChoices)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 uiText.text = currentObj.yesText;
                 EndInteraction();
             }
 
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 uiText.text = currentObj.noText;
                 EndInteraction();
@@ -78,7 +78,7 @@ public class PlayerInteraction : MonoBehaviour
                 // If choices → append instructions
                 if (obj.hasChoices)
                 {
-                    uiText.text += "\n(A = Yes / B = No)";
+                    uiText.text += "\n(Q = Yes / E = No)";
                 }
             }
         }

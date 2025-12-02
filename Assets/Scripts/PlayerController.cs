@@ -4,7 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float gravity = -9.81f;
+    [SerializeField] private float gravity = -30f; //-9.81f
+    Vector3 verticalVelocity = Vector3.zero;
 
     [SerializeField] private Transform cam;
     [SerializeField] private float sensitivity = 5;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         move = transform.TransformDirection(move);
         controller.Move(move * speed * Time.deltaTime);
@@ -48,5 +50,8 @@ public class PlayerController : MonoBehaviour
         pitch -= look.y;
         pitch = Mathf.Clamp(pitch, -90, 90);
         cam.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        
+        verticalVelocity.y += gravity * Time.deltaTime;
+        controller.Move(verticalVelocity * Time.deltaTime);
     }
 }

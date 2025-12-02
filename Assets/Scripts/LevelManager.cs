@@ -3,21 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private Scene currentScene;
-    [SerializeField] public Scene nextScene;
+    [SerializeField] public string nextLevelName;
+    [SerializeField] public GameObject player;
     
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        nextScene = GetComponent<Scene>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject == player)
         {
-            SceneManager.LoadScene(nextScene.name);
+            SceneManager.LoadScene(nextLevelName);
         }
+        
     }
 }

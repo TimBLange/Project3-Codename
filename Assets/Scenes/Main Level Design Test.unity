@@ -3038,6 +3038,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188304297}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &197840873 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1384878530582824377, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
+  m_PrefabInstance: {fileID: 1485579626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &201195092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a7109aa4ee3417c48a6e9512f2377acb, type: 3}
@@ -20470,8 +20475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactDistance: 3
-  playerCamera: {fileID: 0}
-  uiText: {fileID: 0}
+  playerCamera: {fileID: 197840873}
+  uiText: {fileID: 1490000401}
 --- !u!1 &1490000399
 GameObject:
   m_ObjectHideFlags: 0
@@ -20484,7 +20489,7 @@ GameObject:
   - component: {fileID: 1490000402}
   - component: {fileID: 1490000401}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: interaction text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -31,7 +31,7 @@ public class Dialogue : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
-            Destroy(this.gameObject);
+            
             return;
         }
         
@@ -69,41 +69,33 @@ public class Dialogue : MonoBehaviour
 
     public void OnExit(InputAction.CallbackContext context)
     {
-        if (!context.performed || talking)
+        if (!context.performed || !talking)
         {
             return;
         }
-
-        if (textVisible && currentObj != null && currentObj.hasChoices)
-        {
-            uiText.text = currentObj.GetNextSequenceText();
-        }
-        else
-        {
-            EndDialogue();
-        }
         
+        EndDialogue();
     }
 
     public void OnYes(InputAction.CallbackContext context)
     {
-        if (!context.performed || talking || currentObj == null || !currentObj.hasChoices)
+        if (!context.performed || !talking || currentObj == null || !currentObj.hasChoices)
         {
             return;
         }
         
         uiText.text = currentObj.yesText;
-        EndDialogue();
+        //EndDialogue();
     }
     public void OnNo(InputAction.CallbackContext context)
     {
-        if (!context.performed || talking || currentObj == null || !currentObj.hasChoices)
+        if (!context.performed || !talking || currentObj == null || !currentObj.hasChoices)
         {
             return;
         }
         
         uiText.text = currentObj.noText;
-        EndDialogue();
+        //EndDialogue();
     }
     
     public void EndDialogue()

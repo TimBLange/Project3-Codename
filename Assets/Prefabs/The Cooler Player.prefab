@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 4135315399001706039}
   - component: {fileID: 8207551333031916070}
   - component: {fileID: 1466901856869289341}
+  - component: {fileID: 1243341415011242527}
   - component: {fileID: 5369370355157756183}
   m_Layer: 0
   m_Name: The Cooler Player
@@ -294,6 +295,21 @@ MonoBehaviour:
   gravity: -9.81
   cam: {fileID: 2743198712646889781}
   sensitivity: 10
+--- !u!114 &1243341415011242527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3267001912609832326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1d73ef794b64b4d9c468e830f15ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 3
+  playerCamera: {fileID: 1384878530582824377}
+  uiText: {fileID: 0}
 --- !u!114 &5369370355157756183
 MonoBehaviour:
   m_ObjectHideFlags: 0

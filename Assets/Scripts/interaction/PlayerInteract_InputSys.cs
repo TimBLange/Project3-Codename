@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteract_InputSys : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerInteract_InputSys : MonoBehaviour
 
     private ObjectInteract currentObj;
     private bool textVisible = false;
+    
+    
 
     void Update()
     {
@@ -54,6 +57,8 @@ public class PlayerInteract_InputSys : MonoBehaviour
             TryInteract();
         }
     }
+
+ 
 
     void TryInteract()
     {

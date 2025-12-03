@@ -1,0 +1,127 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using TMPro;
+
+public class Dialogue : MonoBehaviour
+{
+    public static Dialogue instance;
+    
+    public InputActionAsset interactActions;
+    private InputActionMap _actionMapPlayer;
+    private InputActionMap _actionMapDialogue;
+    
+    private ObjectInteract currentObj;
+    
+    public TextMeshProUGUI uiText;
+    
+    private bool textVisible = false;
+    private bool talking = false;
+    
+    void OnEnable()
+    {
+        interactActions.Enable();
+    }
+
+    void OnDisable()
+    {
+        interactActions.Disable();
+    }
+    
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        
+        instance = this;
+        
+        _actionMapPlayer = interactActions.FindActionMap("Player", true);
+        _actionMapDialogue = interactActions.FindActionMap("Dialogue", true);
+    }
+    
+    public void dialogue(object obj)
+    {
+        if (obj == null)
+        {
+            Debug.LogWarning("Dialogue object is null");
+            return;
+        }
+        
+        currentObj = (ObjectInteract)obj;
+        currentObj.ResetSequence();
+
+        uiText.text = currentObj.GetText();
+        textVisible = true;
+        talking = true;
+
+        if (currentObj.hasChoices)
+        {
+            uiText.text += "\n(Q = Yes | E = No))";
+        }
+        
+        _actionMapPlayer.Disable();
+        _actionMapDialogue.Enable();
+        
+        Debug.Log($"You just hit {obj}");
+    }
+
+    public void OnExit(InputAction.CallbackContext context)
+    {
+        if (!context.performed || talking)
+        {
+            return;
+        }
+
+        if (textVisible && currentObj != null && currentObj.hasChoices)
+        {
+            uiText.text = currentObj.GetNextSequenceText();
+        }
+        else
+        {
+            EndDialogue();
+        }
+        
+    }
+
+    public void OnYes(InputAction.CallbackContext context)
+    {
+        if (!context.performed || talking || currentObj == null || !currentObj.hasChoices)
+        {
+            return;
+        }
+        
+        uiText.text = currentObj.yesText;
+        EndDialogue();
+    }
+    public void OnNo(InputAction.CallbackContext context)
+    {
+        if (!context.performed || talking || currentObj == null || !currentObj.hasChoices)
+        {
+            return;
+        }
+        
+        uiText.text = currentObj.noText;
+        EndDialogue();
+    }
+    
+    public void EndDialogue()
+    {
+        talking = false;
+        textVisible = false;
+        currentObj = null;
+
+        if (uiText != null)
+        {
+            uiText.text = "";
+        }
+
+        _actionMapDialogue.Disable();
+        _actionMapPlayer.Enable();
+        
+        talking = false;
+        
+        Debug.Log("Dialogue End");
+    }
+}

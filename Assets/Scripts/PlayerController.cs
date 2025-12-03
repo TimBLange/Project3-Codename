@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveInput;
     private Vector3 lookInput;
     private Vector3 velocity;
-
     private float pitch;
     
     void Start()

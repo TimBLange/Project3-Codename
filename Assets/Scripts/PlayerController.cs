@@ -27,13 +27,13 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log($"Are you moving Son? {moveInput}");
+        //Debug.Log($"Are you moving Son? {moveInput}");
     }
 
     public void onLook(InputAction.CallbackContext context)
     {
         lookInput = context.ReadValue<Vector2>();
-        Debug.Log($"Are you looking Son? {lookInput}");
+        //Debug.Log($"Are you looking Son? {lookInput}");
     }
     
     void Update()

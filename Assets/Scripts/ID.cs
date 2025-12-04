@@ -1,16 +1,27 @@
+using System;
 using UnityEngine;
 
 public class ID : MonoBehaviour
 {
-    [Range(0,255)] public int id;
-    public static ID instance;
+    [Range(0,20)] public int id;
     void Start()
     {
-        instance = this;
+        
     }
 
-    public void IDNumber()
+    private void OnTriggerEnter(Collider other)
     {
-        int number = id;
+        if (other.tag == "Player")
+        {
+            Waypoints.instance.WaypointUpdate();
+        }
+
     }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(transform.position, transform.lossyScale);
+    }
+
 }

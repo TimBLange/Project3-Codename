@@ -3,7 +3,7 @@ using UnityEngine;
 public class ObjectInteract : MonoBehaviour
 {
     [Header("Basic Interaction Text")]
-    public string interactionText = "";        // z.B. Prompt
+    public string interactionText = "";       
 
     [Header("Optional: Yes/No Choices")]
     public bool hasChoices = false;

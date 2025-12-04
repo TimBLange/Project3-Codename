@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2434165695051103762}
   - component: {fileID: 344648952390063619}
   - component: {fileID: 3668006858982932388}
+  - component: {fileID: 7209959025923437792}
   m_Layer: 0
   m_Name: The Cooler Player
   m_TagString: Player
@@ -350,6 +351,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 7410393421472043904}
+--- !u!114 &7209959025923437792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234740550154332502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80dbefb689902b441a5d6a3e1db701c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6258467677407450419
 GameObject:
   m_ObjectHideFlags: 0

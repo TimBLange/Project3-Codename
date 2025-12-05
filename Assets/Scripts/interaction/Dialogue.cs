@@ -85,7 +85,6 @@ public class Dialogue : MonoBehaviour
         }
         
         uiText.text = currentObj.yesText;
-        //EndDialogue();
     }
     public void OnNo(InputAction.CallbackContext context)
     {
@@ -95,7 +94,6 @@ public class Dialogue : MonoBehaviour
         }
         
         uiText.text = currentObj.noText;
-        //EndDialogue();
     }
     
     public void EndDialogue()

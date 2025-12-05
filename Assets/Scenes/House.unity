@@ -13665,7 +13665,7 @@ PrefabInstance:
       objectReference: {fileID: 1347326463}
     - target: {fileID: 5737139473564081871, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
       propertyPath: nextLevelName
-      value: Street To Bus
+      value: StreetToBus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -69,7 +69,7 @@ public class Dialogue : MonoBehaviour
 
     public void OnExit(InputAction.CallbackContext context)
     {
-        if (!context.performed || !talking)
+        if (!context.performed)
         {
             return;
         }
@@ -81,10 +81,13 @@ public class Dialogue : MonoBehaviour
     {
         if (!context.performed || !talking || currentObj == null || !currentObj.hasChoices)
         {
+            
             return;
         }
-        
+
+        Debug.Log("Yes Performed");
         uiText.text = currentObj.yesText;
+        talking = false;
     }
     public void OnNo(InputAction.CallbackContext context)
     {
@@ -92,8 +95,10 @@ public class Dialogue : MonoBehaviour
         {
             return;
         }
-        
+
+        Debug.Log("No Performed");
         uiText.text = currentObj.noText;
+        talking = false;
     }
     
     public void EndDialogue()
@@ -110,7 +115,6 @@ public class Dialogue : MonoBehaviour
         _actionMapDialogue.Disable();
         _actionMapPlayer.Enable();
         
-        talking = false;
         
         Debug.Log("Dialogue End");
     }

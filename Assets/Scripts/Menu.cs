@@ -6,7 +6,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame() 
     {
-        SceneManager.LoadSceneAsync("House");
+        SceneManager.LoadSceneAsync(1);
     }
     
     void Start()

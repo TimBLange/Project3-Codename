@@ -1,22 +1,26 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
     public static Dialogue instance;
-    
+
     public InputActionAsset interactActions;
     private InputActionMap _actionMapPlayer;
     private InputActionMap _actionMapDialogue;
-    
+
+    private InputAction _nextAction;
+    private InputAction _yesAction;
+    private InputAction _noAction;
+    private InputAction _exitAction;
+
     private ObjectInteract currentObj;
-    
+
     public TextMeshProUGUI uiText;
-    
-    private bool textVisible = false;
+
     private bool talking = false;
-    
+
     void OnEnable()
     {
         interactActions.Enable();
@@ -26,96 +30,92 @@ public class Dialogue : MonoBehaviour
     {
         interactActions.Disable();
     }
-    
+
     void Awake()
     {
-        if (instance != null && instance != this)
-        {
-            
-            return;
-        }
-        
         instance = this;
-        
+
         _actionMapPlayer = interactActions.FindActionMap("Player", true);
         _actionMapDialogue = interactActions.FindActionMap("Dialogue", true);
+
+        _nextAction = _actionMapDialogue.FindAction("Next", true);
+        _yesAction = _actionMapDialogue.FindAction("Yes", true);
+        _noAction = _actionMapDialogue.FindAction("No", true);
+        _exitAction = _actionMapDialogue.FindAction("Exit", true);
+
+        _nextAction.performed += OnNext;
+        _yesAction.performed += OnYes;
+        _noAction.performed += OnNo;
+        _exitAction.performed += OnExit;
     }
-    
+
     public void dialogue(object obj)
     {
-        if (obj == null)
-        {
-            Debug.LogWarning("Dialogue object is null");
-            return;
-        }
-        
         currentObj = (ObjectInteract)obj;
         currentObj.ResetSequence();
 
-        uiText.text = currentObj.GetText();
-        textVisible = true;
         talking = true;
+        uiText.text = currentObj.GetText();
 
         if (currentObj.hasChoices)
-        {
-            uiText.text += "\n(Q = Yes | E = No))";
-        }
-        
+            uiText.text += "\n\n(Confirm = Yes | Cancel = No)";
+
         _actionMapPlayer.Disable();
         _actionMapDialogue.Enable();
-        
-        Debug.Log($"You just hit {obj}");
     }
 
-    public void OnExit(InputAction.CallbackContext context)
+    public void OnNext(InputAction.CallbackContext ctx)
     {
-        if (!context.performed)
+        if (!ctx.performed || !talking || currentObj == null)
+            return;
+
+        if (currentObj.hasChoices)
+            return;
+
+        if (currentObj.hasSequence && currentObj.GetNextSequenceText() != currentObj.GetText())
         {
+            uiText.text = currentObj.GetText();
             return;
         }
-        
+
         EndDialogue();
     }
 
-    public void OnYes(InputAction.CallbackContext context)
+    public void OnYes(InputAction.CallbackContext ctx)
     {
-        if (!context.performed || !talking || currentObj == null || !currentObj.hasChoices)
-        {
-            
+        if (!ctx.performed || currentObj == null || !currentObj.hasChoices)
             return;
-        }
 
-        Debug.Log("Yes Performed");
         uiText.text = currentObj.yesText;
-        talking = false;
-    }
-    public void OnNo(InputAction.CallbackContext context)
-    {
-        if (!context.performed || !talking || currentObj == null || !currentObj.hasChoices)
-        {
-            return;
-        }
 
-        Debug.Log("No Performed");
-        uiText.text = currentObj.noText;
-        talking = false;
     }
-    
+
+    public void OnNo(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed || currentObj == null || !currentObj.hasChoices)
+            return;
+
+        uiText.text = currentObj.noText;
+
+    }
+
+
+
+    public void OnExit(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed || !talking)
+            return;
+
+        EndDialogue();
+    }
+
     public void EndDialogue()
     {
         talking = false;
-        textVisible = false;
         currentObj = null;
-
-        if (uiText != null)
-        {
-            uiText.text = "";
-        }
+        uiText.text = "";
 
         _actionMapDialogue.Disable();
         _actionMapPlayer.Enable();
-        
-        
-        Debug.Log("Dialogue End");
     }
 }

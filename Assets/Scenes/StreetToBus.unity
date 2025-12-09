@@ -28949,10 +28949,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1990272820}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1990272816}
+      addedObject: {fileID: 1990272810}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1990272814}
@@ -28962,6 +28959,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
   m_PrefabInstance: {fileID: 1990272808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1990272810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990272809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Greet the neighbour?
+  hasChoices: 1
+  yesText: The neighbour looks at you strangely and says nothing.
+  noText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
+  sequenceTexts: []
 --- !u!136 &1990272814
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28985,37 +28999,6 @@ CapsuleCollider:
   m_Height: 22.579788
   m_Direction: 1
   m_Center: {x: 2.6342484e-11, y: -9.557844, z: 0.0017678144}
---- !u!114 &1990272816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990272809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionText: Greet the neighbour?
-  hasChoices: 1
-  yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
-  noText: The neighbour looks at you strangely and says nothing
-  sequenceTexts: []
---- !u!114 &1990272820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990272809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63be011a84782fa46b3d4265d2c3bf1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  uiText: {fileID: 1490000401}
 --- !u!1 &1995895473
 GameObject:
   m_ObjectHideFlags: 0

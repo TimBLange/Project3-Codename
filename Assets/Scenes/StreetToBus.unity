@@ -28956,8 +28956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: Greet the neighbour?
   hasChoices: 1
-  yesText: The neighbour looks at you strangely and says nothing.
-  noText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
+  yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
+  noText: The neighbour looks at you strangely and says nothing.
   sequenceTexts: []
 --- !u!136 &1990272814
 CapsuleCollider:

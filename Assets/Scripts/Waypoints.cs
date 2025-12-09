@@ -16,7 +16,7 @@ public class Waypoints : MonoBehaviour
     void Start()
     {
         WaypointID = GameObject.FindGameObjectsWithTag("Waypoint").Length;
-        Debug.Log(WaypointID);
+        Debug.Log($"{WaypointID} waypoints in scene");
         instance = this;
         objectIDList = GameObject.FindGameObjectsWithTag("Waypoint");
         WaypointList();

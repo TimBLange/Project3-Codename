@@ -1920,20 +1920,6 @@ MonoBehaviour:
   yesText: The neighbour looks at you strangely and says nothing.
   noText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
   sequenceTexts: []
---- !u!114 &132447508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132447502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63be011a84782fa46b3d4265d2c3bf1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  uiText: {fileID: 1490000401}
 --- !u!1 &134999062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,9 +2643,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 132447508}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
       insertIndex: -1
       addedObject: {fileID: 132447507}
@@ -31598,7 +31581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.4
+      value: -43.47
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31606,7 +31589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 167.4
+      value: 169.18
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalRotation.w

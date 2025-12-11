@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
@@ -43,28 +43,37 @@ public class Dialogue : MonoBehaviour
     
     public void dialogue(object obj)
     {
-        if (obj == null)
-        {
-            Debug.LogWarning("Dialogue object is null");
+        if (currentObj == null)
             return;
-        }
-        
-        currentObj = (ObjectInteract)obj;
-        currentObj.ResetSequence();
 
         uiText.text = currentObj.GetText();
-        textVisible = true;
-        talking = true;
 
         if (currentObj.hasChoices)
         {
-            uiText.text += "\n(Q = Yes | E = No))";
+            uiText.text += "\n(Q = Yes | E = No)";
         }
+    }
+
+    
+    public void OnNext(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed || !talking || currentObj == null)
+            return;
+
         
-        _actionMapPlayer.Disable();
-        _actionMapDialogue.Enable();
+        if (currentObj.hasChoices)
+            return;
+
+        string next = currentObj.GetNextSequenceText();
+
         
-        Debug.Log($"You just hit {obj}");
+        if (string.IsNullOrEmpty(next))
+        {
+            EndDialogue();
+            return;
+        }
+
+        uiText.text = next;
     }
 
     public void OnExit(InputAction.CallbackContext context)

@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ObjectInteract : MonoBehaviour
 {
+    public static ObjectInteract instance;
+    
     [Header("Basic Interaction Text")]
     public string interactionText = "";
 
@@ -58,5 +61,17 @@ public class ObjectInteract : MonoBehaviour
     public void ResetSequence()
     {
         sequenceIndex = -1;
+    }
+
+    // Gibt einfach nur an, dass der script von anderen Scripts angesprochen werden kann
+    public void Awake()
+    {
+        instance = this;
+    }
+
+    // Hier kommt alles rein wodurch du interaktionen startest welche keine Dialoge sind( wird durch den PlayerInteractions Script angesprochen )
+    public void BasicInteraction()
+    {
+        Debug.Log("Congratulations! You just Interacted with a non Dialogue Object :D");
     }
 }

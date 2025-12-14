@@ -64,6 +64,11 @@ public class PlayerInteractions : MonoBehaviour
             {
                 Debug.Log("You missed...");
             }
+
+            if (obj != null !& obj.hasChoices)
+            {
+                ObjectInteract.instance.BasicInteraction();
+            }
         }
     }
 }

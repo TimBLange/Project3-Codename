@@ -43,39 +43,31 @@ public class Dialogue : MonoBehaviour
     
     public void dialogue(object obj)
     {
-        if (currentObj == null)
-            return;
+        if (obj == null)
+        {
+            Debug.LogWarning("Dialogue object is null");
+            
+            if (currentObj == null)
+                        return;
+        }
+        
+        currentObj = (ObjectInteract)obj;
+        currentObj.ResetSequence();
+        
+        _actionMapDialogue.Enable();
+        _actionMapPlayer.Disable();
+        
 
         uiText.text = currentObj.GetText();
-
+        textVisible = true;
+        talking = true;
+        
         if (currentObj.hasChoices)
         {
             uiText.text += "\n(Q = Yes | E = No)";
         }
     }
-
     
-    public void OnNext(InputAction.CallbackContext ctx)
-    {
-        if (!ctx.performed || !talking || currentObj == null)
-            return;
-
-        
-        if (currentObj.hasChoices)
-            return;
-
-        string next = currentObj.GetNextSequenceText();
-
-        
-        if (string.IsNullOrEmpty(next))
-        {
-            EndDialogue();
-            return;
-        }
-
-        uiText.text = next;
-    }
-
     public void OnExit(InputAction.CallbackContext context)
     {
         if (!context.performed)

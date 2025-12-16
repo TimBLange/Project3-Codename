@@ -9182,7 +9182,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 573740ab014451f42a17fa5c4a243ee4, type: 2}
     - target: {fileID: 919132149155446097, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
       propertyPath: m_Name
-      value: Woman Standing new (2)
+      value: interact Woman Standing new (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8417361359673230750, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -9191,8 +9191,58 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583449981}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583449980}
   m_SourcePrefab: {fileID: 100100000, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
+--- !u!1 &583449979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
+  m_PrefabInstance: {fileID: 583449978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &583449980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583449979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Have a fun day at school, my love! We will pick you up later and
+    go get ice-cream. Remember the lunch I packed you
+  hasChoices: 0
+  yesText: 
+  noText: 
+  sequenceTexts: []
+--- !u!65 &583449981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583449979}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.532037, y: 3.467646, z: 22.742939}
+  m_Center: {x: -0.14262052, y: 0.0017395013, z: -9.63942}
 --- !u!1001 &584225623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13558,7 +13608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: m_Name
-      value: Man Standing new (2)
+      value: interact Man Standing new (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8417361359673230750, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -13567,8 +13617,57 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 835668277}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 835668276}
   m_SourcePrefab: {fileID: 100100000, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+--- !u!1 &835668275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+  m_PrefabInstance: {fileID: 835668274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &835668276
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835668275}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.166339, y: 3.4676473, z: 22.665104}
+  m_Center: {x: -0.03965917, y: 0.0018307149, z: -9.600499}
+--- !u!114 &835668277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835668275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Eww go away! I don't wanna be seen with you!
+  hasChoices: 0
+  yesText: 
+  noText: 
+  sequenceTexts: []
 --- !u!1001 &848218558
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11711,9 +11711,6 @@ PrefabInstance:
       addedObject: {fileID: 1523712581}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1523712579}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1523712580}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
       insertIndex: -1
@@ -11739,10 +11736,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: q  or e
+  interactionText: Did you wake up late again?
   hasChoices: 1
-  yesText: e
-  noText: q
+  yesText: "I always have to worry about you\u2026\u201D"
+  noText: "Why can\u2019t you be more like your sister? I never had to worry about
+    her!"
   sequenceTexts: []
 --- !u!65 &1439912699
 BoxCollider:
@@ -12230,23 +12228,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
   m_PrefabInstance: {fileID: 1439912689}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1523712579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523712577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionText: eeeh
-  hasChoices: 1
-  yesText: pp
-  noText: "\xFC\xFC\xFC"
-  sequenceTexts: []
 --- !u!136 &1523712580
 CapsuleCollider:
   m_ObjectHideFlags: 0

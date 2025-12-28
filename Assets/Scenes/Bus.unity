@@ -226,7 +226,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 5c91827c2efc1e44ca3ccbb437162423, type: 3}
   m_Resource: {fileID: 8300000, guid: 5c91827c2efc1e44ca3ccbb437162423, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.271
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2804,9 +2804,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Do you want something?
+  interactionText: sit next to your classmate?
   hasChoices: 1
-  yesText: Then why are you looking at me?
+  yesText: "what are you looking at? Weirdo\u2026"
   noText: Eww I don't want to sit next to you!
   sequenceTexts: []
 --- !u!65 &2072750021
@@ -3039,17 +3039,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: I need to get off here
-  hasChoices: 0
-  yesText: 
-  noText: 
-  sequenceTexts:
-  - But what if someone already pressed it?
-  - "Maybe we\u2019re still too far... will the driver think I wanted to get off
-    earlier?"
-  - "But what if\u2014"
-  - '[Someone else presses the button. Player falls silent.]'
-  - 
+  interactionText: I need to get off at the next stop.
+  hasChoices: 1
+  yesText: "But what if someone already pressed it? Maybe we\u2019re still too far...
+    will the driver think I wanted to get off earlier? People will look at me\u2026
+    they all hate me- [someone else pressed the button]"
+  noText: "But I have to- I need to go to school! What if the bus won\u2019t stop?
+    Will I get in trouble? Momma will be mad\u2026 and my grades are already bad-
+    [someone else pressed the button]"
+  sequenceTexts: []
 --- !u!64 &2132028208
 MeshCollider:
   m_ObjectHideFlags: 0

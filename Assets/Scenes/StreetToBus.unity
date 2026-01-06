@@ -9794,6 +9794,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Oak
       objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: fd259b4cc0f433f4ead98aa01d79b4ac, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.70635885
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: fd259b4cc0f433f4ead98aa01d79b4ac, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.48086506
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: fd259b4cc0f433f4ead98aa01d79b4ac, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.36335918
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: fd259b4cc0f433f4ead98aa01d79b4ac, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.13905966
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12087,8 +12103,16 @@ PrefabInstance:
       value: LevelEndTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5000823
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.12485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.18
+      value: -17.180002
       objectReference: {fileID: 0}
     - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12096,7 +12120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.49
+      value: 10.677504
       objectReference: {fileID: 0}
     - target: {fileID: 4346957827850381698, guid: 0a55cfafd98fcdd44805a2d7cb31615b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28912,8 +28936,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.39, z: 1}
+  m_Center: {x: 0, y: 1.11, z: 0}
 --- !u!4 &1572854790 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd259b4cc0f433f4ead98aa01d79b4ac, type: 3}

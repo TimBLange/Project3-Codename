@@ -52,5 +52,16 @@ public class PlayerController : MonoBehaviour
         
         verticalVelocity.y += gravity * Time.deltaTime;
         controller.Move(verticalVelocity * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Period))
+        {
+            speed = 20;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Period))
+        {
+            speed = 5;
+        }
+        
     }
 }

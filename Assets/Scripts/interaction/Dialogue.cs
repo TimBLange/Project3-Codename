@@ -15,7 +15,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI uiText;
     
     private bool textVisible = false;
-    private bool talking = false;
+    public bool talking = false;
     
     void OnEnable()
     {

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 344648952390063619}
   - component: {fileID: 3668006858982932388}
   - component: {fileID: 7209959025923437792}
+  - component: {fileID: 8355422444538652698}
   m_Layer: 0
   m_Name: The Cooler Player
   m_TagString: Player
@@ -365,6 +366,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypointMarker: {fileID: 0}
   objectIDList: []
+--- !u!114 &8355422444538652698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234740550154332502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be1b00ac2b622c42a82eb174295d85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  isPaused: 0
 --- !u!1 &6258467677407450419
 GameObject:
   m_ObjectHideFlags: 0

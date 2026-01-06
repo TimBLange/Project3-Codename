@@ -10,8 +10,8 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        pauseMenu.SetActive(false);
     }
 
 
@@ -23,11 +23,13 @@ public class PauseMenu : MonoBehaviour
             {
                 ResumeGame();
                 Cursor.lockState = CursorLockMode.Locked;
+
             }
             else
             {
                 PauseGame();
                 Cursor.lockState = CursorLockMode.Confined;
+
             }
         }
     }

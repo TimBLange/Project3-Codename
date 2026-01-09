@@ -11014,7 +11014,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1490000400}
+  - {fileID: 895479069}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12696,7 +12696,6 @@ Transform:
   - {fileID: 901004396}
   - {fileID: 1172226931}
   - {fileID: 627116949}
-  - {fileID: 1990272817}
   - {fileID: 1593390780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16863,7 +16862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.69
+      value: -25.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16871,7 +16870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 149.08
+      value: 148.709
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16919,6 +16918,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 817122222}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 817122225}
   m_SourcePrefab: {fileID: 100100000, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
 --- !u!1 &817122219 stripped
 GameObject:
@@ -16977,6 +16979,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
   m_PrefabInstance: {fileID: 817122218}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &817122225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817122220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Greet the neighbour?
+  showTextboxBackground: 1
+  textboxBackground: {fileID: 895479070}
+  hasChoices: 1
+  yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
+  noText: The neighbour looks at you strangely and says nothing.
+  sequenceTexts: []
 --- !u!1 &822125058
 GameObject:
   m_ObjectHideFlags: 0
@@ -18584,6 +18605,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &895479068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895479069}
+  - component: {fileID: 895479071}
+  - component: {fileID: 895479070}
+  m_Layer: 5
+  m_Name: textbox bild
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &895479069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895479068}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7.22, y: 2.28, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1490000400}
+  m_Father: {fileID: 523950968}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -95.45}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &895479070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895479068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 22619b13bc733c84481fadf43a121144, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &895479071
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895479068}
+  m_CullTransparentMesh: 1
 --- !u!4 &901004396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
@@ -21188,6 +21285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Talk to your classmates?
+  showTextboxBackground: 1
+  textboxBackground: {fileID: 0}
   hasChoices: 1
   yesText: Damn, look at that freak! No-one wants to be with them! Ha Ha
   noText: Eww go away! I don't wanna be seen with you!
@@ -27753,17 +27852,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490000399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 523950968}
+  m_Father: {fileID: 895479069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -95.45}
-  m_SizeDelta: {x: 900, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 131, y: 123}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490000401
 MonoBehaviour:
@@ -27812,15 +27911,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -27839,7 +27938,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
+  m_parseCtrlCharacters: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
@@ -33453,6 +33552,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Listen in on their conversation?
+  showTextboxBackground: 1
+  textboxBackground: {fileID: 0}
   hasChoices: 1
   yesText: You continue on your way.
   noText: Have a fun day at school, my love! We will pick you up later and go get
@@ -37026,135 +37127,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988922252}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1990272808
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 605839669}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.13801003
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.13801001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.13801003
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.39
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.88
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 149.25
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.79319054
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.60897356
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 75.031
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      propertyPath: m_Name
-      value: Mann
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1990272810}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1990272814}
-  m_SourcePrefab: {fileID: 100100000, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
---- !u!1 &1990272809 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-  m_PrefabInstance: {fileID: 1990272808}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1990272810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990272809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionText: Greet the neighbour?
-  hasChoices: 1
-  yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
-  noText: The neighbour looks at you strangely and says nothing.
-  sequenceTexts: []
---- !u!136 &1990272814
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990272809}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 12.261844
-  m_Height: 22.579788
-  m_Direction: 1
-  m_Center: {x: 2.6342484e-11, y: -9.557844, z: 0.0017678144}
---- !u!4 &1990272817 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48a73dd9ec5405e49acdc9adc99ce850, type: 3}
-  m_PrefabInstance: {fileID: 1990272808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1991112049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 757a25a2d039cb24e96105a1b6cbe3e5, type: 3}

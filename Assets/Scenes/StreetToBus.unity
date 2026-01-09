@@ -11862,10 +11862,41 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: bdcfe2503477fe142ba0c3d01e40f6f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 57962024}
+    - targetCorrespondingSourceObject: {fileID: -6733177361254619370, guid: bdcfe2503477fe142ba0c3d01e40f6f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 571414876}
     - targetCorrespondingSourceObject: {fileID: 8700725330082129686, guid: bdcfe2503477fe142ba0c3d01e40f6f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1672989224}
   m_SourcePrefab: {fileID: 100100000, guid: bdcfe2503477fe142ba0c3d01e40f6f4, type: 3}
+--- !u!1 &571414875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6733177361254619370, guid: bdcfe2503477fe142ba0c3d01e40f6f4, type: 3}
+  m_PrefabInstance: {fileID: 571414874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &571414876
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571414875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.045142565
+  m_Height: 1.6183718
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &574449099
 GameObject:
   m_ObjectHideFlags: 0
@@ -16992,8 +17023,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Greet the neighbour?
-  showTextboxBackground: 1
-  textboxBackground: {fileID: 895479070}
   hasChoices: 1
   yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
   noText: The neighbour looks at you strangely and says nothing.
@@ -21285,8 +21314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Talk to your classmates?
-  showTextboxBackground: 1
-  textboxBackground: {fileID: 0}
   hasChoices: 1
   yesText: Damn, look at that freak! No-one wants to be with them! Ha Ha
   noText: Eww go away! I don't wanna be seen with you!
@@ -29207,7 +29234,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.39, z: 1}
+  m_Size: {x: 1, y: 4.62, z: 1}
   m_Center: {x: 0, y: 1.11, z: 0}
 --- !u!4 &1572854790 stripped
 Transform:
@@ -33552,8 +33579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Listen in on their conversation?
-  showTextboxBackground: 1
-  textboxBackground: {fileID: 0}
   hasChoices: 1
   yesText: You continue on your way.
   noText: Have a fun day at school, my love! We will pick you up later and go get

@@ -13,6 +13,7 @@ public class Dialogue : MonoBehaviour
     private ObjectInteract currentObj;
     
     public TextMeshProUGUI uiText;
+    public GameObject InteractionCanvas;
     
     private bool textVisible = false;
     public bool talking = false;
@@ -35,6 +36,8 @@ public class Dialogue : MonoBehaviour
             return;
         }
         
+        InteractionCanvas.SetActive(false);
+        
         instance = this;
         
         _actionMapPlayer = interactActions.FindActionMap("Player", true);
@@ -50,6 +53,8 @@ public class Dialogue : MonoBehaviour
             if (currentObj == null)
                         return;
         }
+        
+        InteractionCanvas.SetActive(true);
         
         currentObj = (ObjectInteract)obj;
         currentObj.ResetSequence();
@@ -115,6 +120,8 @@ public class Dialogue : MonoBehaviour
 
         _actionMapDialogue.Disable();
         _actionMapPlayer.Enable();
+        
+        InteractionCanvas.SetActive(false);
         
         
         Debug.Log("Dialogue End");

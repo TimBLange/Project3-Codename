@@ -76,6 +76,10 @@ public class Dialogue : MonoBehaviour
         {
             uiText.text += "\n(Q = Yes | E = No)";
         }
+        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
     }
     
     public void OnExit(InputAction.CallbackContext context)
@@ -127,7 +131,9 @@ public class Dialogue : MonoBehaviour
         _actionMapPlayer.Enable();
         
         InteractionCanvas.SetActive(false);
-        
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         
         Debug.Log("Dialogue End");
     }

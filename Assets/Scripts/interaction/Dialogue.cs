@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 
@@ -17,7 +18,13 @@ public class Dialogue : MonoBehaviour
     
     private bool textVisible = false;
     public bool talking = false;
-    
+
+
+    private void Start()
+    {
+        instance = this;
+    }
+
     void OnEnable()
     {
         interactActions.Enable();
@@ -37,8 +44,6 @@ public class Dialogue : MonoBehaviour
         }
         
         InteractionCanvas.SetActive(false);
-        
-        instance = this;
         
         _actionMapPlayer = interactActions.FindActionMap("Player", true);
         _actionMapDialogue = interactActions.FindActionMap("Dialogue", true);

@@ -1,23 +1,36 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public bool isPaused;
+    public bool isPaused = false;
 
+    public InputActionAsset interactActions;
+    private InputActionMap _actionMap;
 
     
+    void OnEnable()
+    {
+        interactActions.Enable();
+    }
 
+    void OnDisable()
+    {
+        interactActions.Disable();
+    }
 
     void Awake()
     {
+        ResumeGame();
+        _actionMap = interactActions.FindActionMap("Player", true);
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
     }
 
-
+/*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -37,12 +50,46 @@ public class PauseMenu : MonoBehaviour
         }
         
     }
+*/
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        
+            if (Dialogue.instance.talking == true)
+            {
+                Dialogue.instance.EndDialogue();
+            }
+            else
+            {
+                PauseGame();
+            }
+        
+    }
 
+  /*  public void OnResume(InputAction.CallbackContext context)
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+*/
     public void PauseGame()
     {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
-        isPaused = true;
+        if (isPaused)
+        {
+            ResumeGame();
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
+        else
+        {
+            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;
+            isPaused = true;
+            Cursor.lockState = CursorLockMode.Confined;
+
+        }
+        
     }
 
     public void ResumeGame()
@@ -53,6 +100,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
     }
+
     public void MainMenu()
     {
         isPaused = false;

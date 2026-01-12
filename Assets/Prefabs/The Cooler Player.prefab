@@ -362,19 +362,7 @@ MonoBehaviour:
     m_ActionId: 9fb1d170-f311-4c05-bdc4-e7deea710da5
     m_ActionName: 'Dialogue/Exit[/Keyboard/escape]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8355422444538652698}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OnResume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 01ddfe0e-596d-4f46-8f43-58ddaa61a918
     m_ActionName: Player/New action
   m_NeverAutoSwitchControlSchemes: 0
@@ -408,8 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be1b00ac2b622c42a82eb174295d85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuScene:
-    m_Handle: 0
   pauseMenu: {fileID: 0}
   isPaused: 0
   interactActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

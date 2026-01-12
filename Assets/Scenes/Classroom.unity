@@ -4761,6 +4761,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 77115f8e62ef45c4883259dcfe7249c4, type: 3}
   m_PrefabInstance: {fileID: 1438637371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1049690842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4083001915857186220, guid: 8c54531fcb8d6f94694723e2c2b85fdf, type: 3}
+  m_PrefabInstance: {fileID: 1727508955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1054122593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8526,11 +8531,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c54531fcb8d6f94694723e2c2b85fdf, type: 3}
---- !u!1 &1727508956 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5946440139846347290, guid: 8c54531fcb8d6f94694723e2c2b85fdf, type: 3}
-  m_PrefabInstance: {fileID: 1727508955}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1754994740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9127,34 +9127,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: The Cooler Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1157800250}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668006858982932388, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
-      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.3
@@ -9234,7 +9206,7 @@ PrefabInstance:
     - target: {fileID: 8355422444538652698, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 1727508956}
+      objectReference: {fileID: 1049690842}
     m_RemovedComponents:
     - {fileID: 2883239027514794386, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
     m_RemovedGameObjects: []

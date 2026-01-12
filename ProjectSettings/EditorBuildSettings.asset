@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House.unity
     guid: b04c1600157bf194d90e679f7e7a8b0d
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: 88e11be3ca997914cb85fe11e017b979
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 56a6176725b015d4aaafad155bb07f3c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b4725b2e9e6c4c948bf5cdbd600dfe42, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

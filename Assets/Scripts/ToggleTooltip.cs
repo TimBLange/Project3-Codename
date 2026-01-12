@@ -5,10 +5,13 @@ using UnityEngine;
 public class ToggleTooltip : MonoBehaviour
 {
     public GameObject TooltipText;
-    private bool TooltipShown;
+    public bool TooltipShown;
+    
+    public static ToggleTooltip instance;
     
     void Awake()
     {
+        instance = this;
         TooltipText.SetActive(false);
         TooltipShown = false;
     }
@@ -26,13 +29,13 @@ public class ToggleTooltip : MonoBehaviour
         }
     }
 
-    void HideToolTip()
+    public void HideToolTip()
     {
         TooltipText.SetActive(false);
         TooltipShown = false;
     }
 
-    void ShowTooltip()
+    public void ShowTooltip()
     {
         TooltipText.SetActive(true);
         TooltipShown = true;

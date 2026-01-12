@@ -3990,7 +3990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &946086020
 Transform:
   m_ObjectHideFlags: 0
@@ -4015,9 +4015,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 946086019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b950d41382b30d440b0e47f2339c5def, type: 3}
+  m_Script: {fileID: 11500000, guid: a0f66f5a732daa940859aa9c03863dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneIndex: 0
 --- !u!1 &959867789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,7 +6538,9 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 4897021922989115382, guid: e866e9ab3d9e10c4586117e9c26256c2, type: 2}
+    value: {fileID: 946086019}
   m_ExposedReferences:
     m_References:
     - c80f847adf23fd04aa8439d29694efe2: {fileID: 946086019}

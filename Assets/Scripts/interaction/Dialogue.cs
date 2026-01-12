@@ -134,6 +134,12 @@ public class Dialogue : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+
+        if (ToggleTooltip.instance.TooltipShown == true)
+        {
+            ToggleTooltip.instance.HideToolTip();
+        }
         
         Debug.Log("Dialogue End");
     }

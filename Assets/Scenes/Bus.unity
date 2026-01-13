@@ -6403,7 +6403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TipText: ayayayayayaya
+  TipText: An anxious child who has problems with interacting is not just "shy" they
+    believe they'll always get the worst outcome.
 --- !u!1 &2084091164
 GameObject:
   m_ObjectHideFlags: 0
@@ -6779,7 +6780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TipText: ayayayayayaya
+  TipText: Children with anxiety could have a bad time making choices or doing actions
+    while in public, as they fear to be judged.
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

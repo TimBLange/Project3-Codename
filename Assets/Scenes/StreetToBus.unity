@@ -12234,6 +12234,36 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3669258589346456565, guid: 7d1f68e4c74d55c4389245cd7e52912f, type: 3}
+--- !u!114 &583504658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583504650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf25a5b48b674b4981f09c1ffd81948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Meow?
+  hasChoices: 1
+  yesText: Meow meow- Meow!
+  noText: Meow? Meow meow!!
+  sequenceTexts: []
+--- !u!114 &583504659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583504650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TipText: Meow meow meow meow meow meow meow meow
 --- !u!1001 &584225623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21883,7 +21913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TipText: ayayayayayaya
+  TipText: Children who have anxiety often have bad social interactions with their
+    peers. This can sometimes feel horrible, as if the child is hated by everyone.
 --- !u!1 &1107494962
 GameObject:
   m_ObjectHideFlags: 0
@@ -34182,7 +34213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TipText: ayayayayayaya
+  TipText: Often children see other families from the outside and feel jealous of
+    what they have without knowing what truly happens at home.
 --- !u!1 &1803165322
 GameObject:
   m_ObjectHideFlags: 0
@@ -34363,6 +34395,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d1f68e4c74d55c4389245cd7e52912f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583504659}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d1f68e4c74d55c4389245cd7e52912f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583504658}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d1f68e4c74d55c4389245cd7e52912f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 583504654}
@@ -35227,7 +35265,7 @@ Transform:
   m_GameObject: {fileID: 1871734414}
   serializedVersion: 2
   m_LocalRotation: {x: 0.011773388, y: -0, z: -0, w: 0.9999307}
-  m_LocalPosition: {x: -24.98, y: 1.449, z: 11.445}
+  m_LocalPosition: {x: -23.937, y: 1.449, z: 11.445}
   m_LocalScale: {x: 0.32, y: 0.32, z: 0.32}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -42217,6 +42255,11 @@ PrefabInstance:
     - target: {fileID: 1009702018046816178, guid: fde974c9b8dceb24b9795dbe5c26944d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303383722773353893, guid: fde974c9b8dceb24b9795dbe5c26944d, type: 3}
+      propertyPath: TipText
+      value: In many social interactions children could feel like they can never
+        do anything right even if they try.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -29136,7 +29136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TipText: ayayayayayaya
+  TipText: Many children feel bad when their parents express concern for them or
+    compare them to their siblings. Often it feels accusatory.
 --- !u!4 &1442986628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3222040aca144db4f83af319b39cdada, type: 3}

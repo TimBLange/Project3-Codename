@@ -138,7 +138,7 @@ public class Dialogue : MonoBehaviour
 
         if (ToggleTooltip.instance.TooltipShown == true)
         {
-            ToggleTooltip.instance.HideToolTip();
+            ToggleTooltip.instance.OnToggle();
         }
         
         Debug.Log("Dialogue End");

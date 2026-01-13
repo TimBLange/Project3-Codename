@@ -5485,6 +5485,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1943371404}
   m_LocalEulerAnglesHint: {x: 0, y: -0.016, z: 0}
+--- !u!1 &294102699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7842833539237699495, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+  m_PrefabInstance: {fileID: 1600160453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &294102701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8079976185244075242, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+  m_PrefabInstance: {fileID: 1600160453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294102699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &296751731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31988,6 +32004,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas interaction
       objectReference: {fileID: 0}
+    - target: {fileID: 4883303859263797729, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: TooltipTextGO
+      value: 
+      objectReference: {fileID: 294102699}
+    - target: {fileID: 4883303859263797729, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: TooltipTextbox
+      value: 
+      objectReference: {fileID: 294102701}
     - target: {fileID: 5829057774150200971, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -32067,6 +32091,10 @@ PrefabInstance:
     - target: {fileID: 5829057774150200971, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880708473636084245, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

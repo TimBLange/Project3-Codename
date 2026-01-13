@@ -48,12 +48,14 @@ public class PlayerInteractions : MonoBehaviour
         if (Physics.Raycast(ray, out hit, interactDistance))
         {
             ObjectInteract obj = hit.collider.GetComponent<ObjectInteract>();
+            HelpText help = hit.collider.GetComponent<HelpText>();
 
             if (obj != null && obj.hasChoices)
             {
                 if (Dialogue.instance != null)
                 {
-                    Dialogue.instance.dialogue(obj);    
+                    Dialogue.instance.dialogue(obj);
+                    ToggleTooltip.instance.GetTooltipText(help.TipText);
                 }
                 else
                 {

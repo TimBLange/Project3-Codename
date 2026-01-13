@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class ToggleTooltip : MonoBehaviour
 {
-    public GameObject TooltipText;
+    public GameObject TooltipTextGO;
+    private TMPro.TMP_Text TooltipTextbox;
     public bool TooltipShown;
     
     public static ToggleTooltip instance;
     
+    private HelpText currentNPC;
+
+    
     void Awake()
     {
+        //Debug.Log(HelpText.instance.NPCTip);
+        TooltipTextbox=TooltipTextGO.GetComponent<TMPro.TMP_Text>();
         instance = this;
-        TooltipText.SetActive(false);
+        TooltipTextGO.SetActive(false);
         TooltipShown = false;
     }
 
@@ -29,16 +35,24 @@ public class ToggleTooltip : MonoBehaviour
         }
     }
 
-    public void HideToolTip()
+    private void HideToolTip()
     {
-        TooltipText.SetActive(false);
+        TooltipTextGO.SetActive(false);
         TooltipShown = false;
     }
 
-    public void ShowTooltip()
+    private void ShowTooltip()
     {
-        TooltipText.SetActive(true);
+        
+        TooltipTextGO.SetActive(true);
         TooltipShown = true;
     }
 
+    public void GetTooltipText(string text)
+    {
+        Debug.Log("hellllp");
+        TooltipTextbox.text = text;
+        
+
+    }
 }

@@ -8,6 +8,7 @@ public class BackToMenu : MonoBehaviour
     void OnEnable()
     {
         SceneManager.LoadSceneAsync(SceneIndex);
+        Cursor.lockState = CursorLockMode.None;
     }
     
 }

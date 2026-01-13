@@ -11427,6 +11427,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2948834490655937065, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3385943017048251284, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: m_Name
       value: Canvas interaction

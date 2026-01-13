@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6320175709580580868}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5303383722773353893}
   m_SourcePrefab: {fileID: 100100000, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}
 --- !u!1 &145791203392338493 stripped
 GameObject:
@@ -125,6 +128,19 @@ MonoBehaviour:
   yesText: "The neighbour mutters, \u201CYoung people these days\u2026 no manners.\u201D"
   noText: The neighbour looks at you strangely and says nothing.
   sequenceTexts: []
+--- !u!114 &5303383722773353893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145791203392338493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TipText: ayayayayayaya
 --- !u!1 &380833506074080520 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 381a949fcd41a504a9b28039579d43f9, type: 3}

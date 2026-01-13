@@ -29338,6 +29338,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1439912698}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1439912700}
   m_SourcePrefab: {fileID: 100100000, guid: 5094209f39f1fe84d8c668121f2e967b, type: 3}
 --- !u!1 &1439912690 stripped
 GameObject:
@@ -29383,6 +29386,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.532041, y: 3.467648, z: 22.742939}
   m_Center: {x: -0.23667915, y: 0.53177166, z: -9.6394205}
+--- !u!114 &1439912700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439912690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42432ad1031dd841a9aeeff48dd3c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TipText: ayayayayayaya
 --- !u!4 &1442986628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3222040aca144db4f83af319b39cdada, type: 3}
@@ -31850,6 +31866,10 @@ PrefabInstance:
     - target: {fileID: 51905693976486407, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: m_fontSizeBase
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948834490655937065, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3385943017048251284, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: m_Name

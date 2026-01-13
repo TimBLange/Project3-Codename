@@ -73,21 +73,19 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 */
-    public void PauseGame()
+    private void PauseGame()
     {
         if (isPaused)
         {
             ResumeGame();
-            Cursor.lockState = CursorLockMode.Locked;
-
         }
         else
         {
             pauseMenu.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
-            Cursor.lockState = CursorLockMode.Confined;
-
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         
     }
@@ -98,6 +96,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
     }
 
@@ -107,6 +106,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Debug.Log("MainMenu has been pressed");
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
         
     }

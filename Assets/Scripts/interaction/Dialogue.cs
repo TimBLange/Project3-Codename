@@ -141,6 +141,6 @@ public class Dialogue : MonoBehaviour
             ToggleTooltip.instance.OnToggle();
         }
         
-        Debug.Log("Dialogue End");
+        //Debug.Log("Dialogue End");
     }
 }

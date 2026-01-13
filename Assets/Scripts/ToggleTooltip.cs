@@ -26,7 +26,7 @@ public class ToggleTooltip : MonoBehaviour
     {
         if (TooltipShown == true)
         { 
-            Debug.Log("ASDASDA");
+            //Debug.Log("ASDASDA");
             HideToolTip();
         }
         else
@@ -50,7 +50,7 @@ public class ToggleTooltip : MonoBehaviour
 
     public void GetTooltipText(string text)
     {
-        Debug.Log("hellllp");
+        //Debug.Log("hellllp");
         TooltipTextbox.text = text;
         
 

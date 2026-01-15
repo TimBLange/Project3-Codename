@@ -3723,6 +3723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: The Cooler Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2883239027514794386, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.62
@@ -5634,7 +5638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TipText: StringStringsudfuhddudududu
-  NPCTip: 
 --- !u!1 &1120526761
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,7 +6153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TipText: jejejeje
-  NPCTip: 
 --- !u!1 &1369712959
 GameObject:
   m_ObjectHideFlags: 0
@@ -6260,6 +6262,11 @@ Transform:
   - {fileID: 691932877}
   m_Father: {fileID: 2062264137}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1373250359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7842833539237699495, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+  m_PrefabInstance: {fileID: 2006388272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1399883935
 GameObject:
   m_ObjectHideFlags: 0
@@ -8174,6 +8181,10 @@ PrefabInstance:
       value: Canvas interaction
       objectReference: {fileID: 0}
     - target: {fileID: 4883303859263797729, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: TooltipTextGO
+      value: 
+      objectReference: {fileID: 1373250359}
+    - target: {fileID: 4883303859263797729, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
       propertyPath: TooltipTextbox
       value: 
       objectReference: {fileID: 2006388273}
@@ -8257,6 +8268,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5880708473636084245, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8267,7 +8282,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8079976185244075242, guid: 798018b5f842a744fbe0ecb4535b570f, type: 3}
   m_PrefabInstance: {fileID: 2006388272}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1373250359}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}

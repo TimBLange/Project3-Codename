@@ -286,7 +286,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: f1db987e18c88fb449e14985241e8983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1137784872}
   m_SourcePrefab: {fileID: 100100000, guid: f1db987e18c88fb449e14985241e8983, type: 3}
 --- !u!1 &95623998
 GameObject:
@@ -3079,6 +3082,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1db987e18c88fb449e14985241e8983, type: 3}
+--- !u!1 &1137784869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: f1db987e18c88fb449e14985241e8983, type: 3}
+  m_PrefabInstance: {fileID: 87430481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1137784872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137784869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.700007, y: 18.997034, z: 17.611855}
+  m_Center: {x: 0.44137183, y: 5.4884443, z: -7.073875}
 --- !u!1001 &1204869030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6677,9 +6706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: I need to get off at the next stop, should I press the stop button?
   hasChoices: 1
-  yesText: "But what if someone already pressed it? People will look at me\u2026 "
-  noText: "But I have to- I need to go to school! What if the bus won\u2019t stop?
+  yesText: "But I have to- I need to go to school! What if the bus won\u2019t stop?
     Will I get in trouble? Momma will be mad\u2026"
+  noText: "But what if someone already pressed it? People will look at me\u2026 "
   sequenceTexts: []
 --- !u!135 &2132028216
 SphereCollider:

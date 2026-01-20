@@ -2235,7 +2235,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: db540347d5585c94d857f4fddf411f3e, type: 3}
   m_Resource: {fileID: 8300000, guid: db540347d5585c94d857f4fddf411f3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2243,8 +2243,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 1.6822968
+  MaxDistance: 197.04211
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2338,8 +2338,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 0.97214746}
+  m_Center: {x: 0, y: 0, z: 0.0139262285}
 --- !u!23 &75532075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2402,8 +2402,8 @@ Transform:
   m_GameObject: {fileID: 75532072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3683, y: 1.0017, z: 101.3754}
-  m_LocalScale: {x: 9.759078, y: 3.2967, z: 21.553179}
+  m_LocalPosition: {x: -3.2871, y: 1.0017, z: 100.8896}
+  m_LocalScale: {x: 21.36187, y: 3.2967, z: 22.525957}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -36426,15 +36426,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.52
+      value: -4.367
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.96
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 106.31
+      value: 109.177
       objectReference: {fileID: 0}
     - target: {fileID: 4176871820126934763, guid: e860e022f4712294bbd146b8d507e9ba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -56989,8 +56989,8 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: db540347d5585c94d857f4fddf411f3e, type: 3}
   m_Resource: {fileID: 8300000, guid: db540347d5585c94d857f4fddf411f3e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: -0.18
+  m_Volume: 0.15
+  m_Pitch: 0.65
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -56998,7 +56998,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -57156,8 +57156,8 @@ Transform:
   m_GameObject: {fileID: 1330218371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3683, y: 6.32, z: 85.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.04, y: 7.05, z: 83.4}
+  m_LocalScale: {x: 7.691, y: 7.691, z: 7.691}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -64459,8 +64459,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.603958, y: 3.396044, z: 18.643581}
-  m_Center: {x: -3.4851513, y: 1.1980224, z: -3.376251}
+  m_Size: {x: 20.603958, y: 3.396044, z: 18.8789}
+  m_Center: {x: -3.4851513, y: 1.1980224, z: -3.258535}
 --- !u!1 &1562713724
 GameObject:
   m_ObjectHideFlags: 0

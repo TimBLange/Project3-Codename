@@ -331,7 +331,6 @@ GameObject:
   - component: {fileID: 1155156417}
   - component: {fileID: 1155156416}
   - component: {fileID: 1155156415}
-  - component: {fileID: 1155156419}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -423,24 +422,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!320 &1155156419
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155156414}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 706872f17e016aa4ab1f2b7662b8b8f6, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References:
-    - 0ec7e53b81a57244a86dc39845d81d70: {fileID: 1155156414}
 --- !u!1 &1160641953
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +433,6 @@ GameObject:
   - component: {fileID: 1160641954}
   - component: {fileID: 1160641956}
   - component: {fileID: 1160641955}
-  - component: {fileID: 1160641957}
   m_Layer: 5
   m_Name: Cutscene
   m_TagString: Untagged
@@ -514,24 +494,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160641953}
   m_CullTransparentMesh: 1
---- !u!320 &1160641957
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160641953}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d7b0668948bec1a43a4cef02cdbf8e31, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References:
-    - 519494d6a2761354185d12d0b56092a4: {fileID: 1155156414}
 --- !u!1 &1162823008
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +572,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1162823008}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 92640cf7f4bbfcc449d3dd47f8f1ace6, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: fd7a0eb74733e454eae0e6eb4c35834b, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -618,9 +580,12 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -6555980680794551632, guid: 92640cf7f4bbfcc449d3dd47f8f1ace6, type: 2}
     value: {fileID: 1379833926}
+  - key: {fileID: -5498210962696053340, guid: fd7a0eb74733e454eae0e6eb4c35834b, type: 2}
+    value: {fileID: 1379833926}
   m_ExposedReferences:
     m_References:
     - 4030d492641163a4fba6a1fe73803e63: {fileID: 1379833926}
+    - 522d2f52fdb81754eba965b197b658d0: {fileID: 1155156414}
     - 26f141e1c720e96478035ffa43f8ee45: {fileID: 1162823008}
 --- !u!1 &1379833926
 GameObject:

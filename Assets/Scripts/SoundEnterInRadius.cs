@@ -1,14 +1,19 @@
+using System;
 using UnityEngine;
+
 
 public class SoundEnterInRadius : MonoBehaviour
 {
-    public Collider Area;
-    public GameObject Player;
+    public AudioSource Sound;
 
-        void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        Vector3 closestPoint = Area.ClosestPoint(Player.transform.position);
+        if (other.tag == "SoundVol")
+        Sound.Play();
+    }
 
-        transform.position = closestPoint;
+    private void OnTriggerExit(Collider other)
+    {
+        Sound.Stop();
     }
 }
